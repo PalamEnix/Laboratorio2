@@ -1,0 +1,8 @@
+uuid: eee49180-d00e-4369-a910-e585e8e8a78d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Copyright Open Content'
+vid: copyright_cc_by
+description: 'Open Content Licenses'
+weight: 0

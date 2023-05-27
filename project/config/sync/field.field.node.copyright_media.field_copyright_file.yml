@@ -1,0 +1,27 @@
+uuid: 35aa72c7-b709-40db-a1f9-c64d6669c065
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copyright_file
+    - node.type.copyright_media
+  module:
+    - file
+id: node.copyright_media.field_copyright_file
+field_name: field_copyright_file
+entity_type: node
+bundle: copyright_media
+label: 'Copyright File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+field_type: file

@@ -1,0 +1,38 @@
+uuid: 45a8ff1b-5344-47f2-922b-59746bf8b6f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.copyright_media.field_copyright_category
+    - field.field.node.copyright_media.field_copyright_file
+    - node.type.copyright_media
+  module:
+    - file
+    - user
+id: node.copyright_media.default
+targetEntityType: node
+bundle: copyright_media
+mode: default
+content:
+  field_copyright_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_copyright_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

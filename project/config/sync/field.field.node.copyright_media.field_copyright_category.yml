@@ -1,0 +1,21 @@
+uuid: 5288af4e-c0da-4c9b-a813-2ab734a2d163
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copyright_category
+    - node.type.copyright_media
+id: node.copyright_media.field_copyright_category
+field_name: field_copyright_category
+entity_type: node
+bundle: copyright_media
+label: 'Copyright Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

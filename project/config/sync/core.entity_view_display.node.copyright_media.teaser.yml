@@ -1,0 +1,24 @@
+uuid: 00979168-ea0c-4861-af9c-3a616c562771
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.copyright_media.field_copyright_category
+    - field.field.node.copyright_media.field_copyright_file
+    - node.type.copyright_media
+  module:
+    - user
+id: node.copyright_media.teaser
+targetEntityType: node
+bundle: copyright_media
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_copyright_category: true
+  field_copyright_file: true
