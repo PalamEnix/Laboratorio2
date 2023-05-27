@@ -1,0 +1,22 @@
+uuid: dcf41196-0c11-4072-ba60-161c64b69058
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: copy
+label: 'Copyright Category'
+type: 'canonical_entities:node'
+pattern: 'archivos/[node:title]'
+selection_criteria:
+  d70f9153-21b0-4de2-9f96-d3481c7764b2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d70f9153-21b0-4de2-9f96-d3481c7764b2
+    context_mapping:
+      node: node
+    bundles:
+      copyright_media: copyright_media
+selection_logic: and
+weight: -5
+relationships: {  }
