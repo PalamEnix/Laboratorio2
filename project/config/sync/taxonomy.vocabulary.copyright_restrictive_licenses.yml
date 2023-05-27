@@ -1,8 +1,0 @@
-uuid: d25db616-a0c6-4939-b30f-75493aa30484
-langcode: en
-status: true
-dependencies: {  }
-name: 'Copyright Restrictive Licenses'
-vid: copyright_restrictive_licenses
-description: 'Restrictive Licenses'
-weight: 0

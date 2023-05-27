@@ -1,8 +1,0 @@
-uuid: 002c8efd-6b37-44e4-9308-cd571a50d108
-langcode: en
-status: true
-dependencies: {  }
-name: 'Copyright Public Domain'
-vid: copyright_public_domain
-description: 'Public Domain Licenses'
-weight: 0

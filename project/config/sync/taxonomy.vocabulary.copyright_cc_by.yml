@@ -2,7 +2,7 @@ uuid: eee49180-d00e-4369-a910-e585e8e8a78d
 langcode: en
 status: true
 dependencies: {  }
-name: 'Copyright Open Content'
+name: 'Copyright Licenses'
 vid: copyright_cc_by
-description: 'Open Content Licenses'
+description: 'A List of Different Kind of Copyright Licenses'
 weight: 0

@@ -7,8 +7,6 @@ dependencies:
     - node.type.copyright_media
     - system.menu.main
     - taxonomy.vocabulary.copyright_cc_by
-    - taxonomy.vocabulary.copyright_public_domain
-    - taxonomy.vocabulary.copyright_restrictive_licenses
   module:
     - node
     - taxonomy
@@ -265,10 +263,10 @@ display:
               1: {  }
               2: {  }
               3: {  }
-        field_copyright_category_target_id:
-          id: field_copyright_category_target_id
-          table: node__field_copyright_category
-          field: field_copyright_category_target_id
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
           relationship: none
           group_type: group
           admin_label: ''
@@ -278,134 +276,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_copyright_category_target_id_op
-            label: 'Copyright Category'
+            operator_id: tid_op
+            label: 'Copyright License'
             description: ''
             use_operator: false
-            operator: field_copyright_category_target_id_op
+            operator: tid_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_copyright_category_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: 'Copyright Category'
-            description: ''
-            identifier: field_copyright_category_target_id
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: ''
-                operator: or
-                value: {  }
-              2:
-                title: ''
-                operator: or
-                value: {  }
-              3:
-                title: ''
-                operator: or
-                value: {  }
-          reduce_duplicates: false
-          vid: copyright_cc_by
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_copyright_category_target_id_1:
-          id: field_copyright_category_target_id_1
-          table: node__field_copyright_category
-          field: field_copyright_category_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_copyright_category_target_id_1_op
-            label: 'Copyright Category'
-            description: ''
-            use_operator: false
-            operator: field_copyright_category_target_id_1_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_copyright_category_target_id_1
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: 'Copyright Category'
-            description: ''
-            identifier: field_copyright_category_target_id_1
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: ''
-                operator: or
-                value: {  }
-              2:
-                title: ''
-                operator: or
-                value: {  }
-              3:
-                title: ''
-                operator: or
-                value: {  }
-          reduce_duplicates: false
-          vid: copyright_public_domain
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_copyright_category_target_id_2:
-          id: field_copyright_category_target_id_2
-          table: node__field_copyright_category
-          field: field_copyright_category_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_copyright_category_target_id_2_op
-            label: 'Copyright Category'
-            description: ''
-            use_operator: false
-            operator: field_copyright_category_target_id_2_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_copyright_category_target_id_2
+            identifier: tid
             required: false
             remember: false
             multiple: false
@@ -428,7 +306,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          vid: copyright_restrictive_licenses
+          vid: copyright_cc_by
           type: select
           hierarchy: false
           limit: true
